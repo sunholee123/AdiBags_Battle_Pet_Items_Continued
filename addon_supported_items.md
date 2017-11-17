@@ -1,5 +1,5 @@
 # How to Read this
-All items are broken down into categories, with itemID follwoed by the Item name.
+All items are broken down into categories, with itemID followed by the Item name.
 
 ## Miscellaneous Items
 Items that dont fall into any other category

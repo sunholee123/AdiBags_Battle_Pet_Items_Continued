@@ -2,8 +2,22 @@
 by LownIgnitus
 Add various Battle Pet items to AdiBags filter groups]]
 
+local addonName, addon = ...
+local AdiBags = LibStub("AceAddon-3.0"):GetAddon("AdiBags")
+
+local L = addon.L
+local MatchIDs
+local Tooltip
+local Result = {}
+
+local function AddToSet(Set, List)
+	for _, v in ipairs(List) do
+		Set[v] = true
+	end
+end
+
 --Items that dont fall into any other category
-local miscellaneousItems = {
+local petItems = {
 	37431, --Fetch Ball
 	43352, --Pet Grooming Kit
 	43626, --Happy Pet Snack
@@ -55,7 +69,7 @@ local suppliesBags = {
 }
 
 --Items that increase rarity of Battle Pets
-local rareStones ={
+local rareStones = {
 	92741, --Flawless Battle-Stone
 	92679, --Flawless Aquatic Battle-Stone
 	92675, --Flawless Beast Battle-Stone
@@ -113,3 +127,161 @@ local costumeItems = {
 	ll6812, --"Yipp-Saron" Costume
 	128650, --"Merry Munchkin" Costume
 }
+
+local function MatchIDs_Init(self)
+	wipe(Result)
+
+	if self.db.profile.moveMiscellaneous then
+		AddToSet(Result, petItems)
+	end
+
+	if self.db.profile.moveCurrency then
+		AddToSet(Result, currencyItems)
+	end
+
+	if self.db.profile.moveContaining then
+		AddToSet(Result, battlePetContainingItems)
+	end
+
+	if self.db.profile.moveSupplies then
+		AddToSet(Result, suppliesBags)
+	end
+
+	if self.db.profile.moveRare then
+		AddToSet(Result, rareStones)
+	end
+
+	if self.db.profile.moveTraining then
+		AddToSet(Result, trainingStones)
+	end
+
+	if self.db.profile.moveToys then
+		AddToSet(Result, battlePetToys)
+	end
+
+	if self.db.profile.moveCostume then
+		AddToSet(Result, costumeItems)
+	end
+
+	return Result
+end
+
+local function Tooltip_Init()
+	local tip, leftside = CreateFrame("GameTooltip"), {}
+	for i = 1, 6 do
+		local Left, Right = tip:CreateFontString(), tip:CreateFontString()
+		Left:SetFontObject(GameFontNormal)
+		Right:SetFontObject(GameFontNormal)
+		tip:AddFontStrings(Left, Right)
+		leftside[i] = Left
+	end
+	tip.leftside = leftside
+	return tip
+end
+
+local setFilter = AdiBags:RegisterFilter("Battle Pet Items", 98, "ABEvent-1.0")
+setFilter.uiName = L["Battle Pet Items"]
+setFilter.uiDesc = L["Items that are connected to Battle Pets and not actual pets."]
+
+function setFilter:OnInitialize()
+    self.db = AdiBags.db:RegisterNamespace("Battle Pet Items", {
+        profile = {
+            moveMiscellaneous = true,
+            moveCurrency = true,
+			moveContaining = true,
+			moveSupplies = true,
+			moveRare = true,
+			moveTraining = true,
+			moveToys = true,
+			moveCostume = true,
+		}
+	})
+end
+
+function setFilter:Update()
+	MatchIDs = nil
+	self:SendMessage("AdiBags_FiltersChanged")
+end
+
+function setFilter:OnEnable()
+	AdiBags:UpdateFilters()
+end
+
+function setFilter:OnDisable()
+	AdiBags:UpdateFilters()
+end
+
+function setFilter:Filter(slotData)
+	MatchIDs = MatchIDs or MatchIDs_Init(self)
+	if MatchIDs[slotData.itemId] then
+		return L["Battle Pet Items"]
+	end
+	
+	Tooltip = Tooltip or Tooltip_Init()
+	Tooltip:SetOwner(UIParent,"ANCHOR_NONE")
+	Tooltip:ClearLines()
+	
+	if slotData.bag == BANK_CONTAINER then
+		Tooltip:SetInventoryItem("player", BankButtonIDToInvSlotID(slotData.slot, nil))
+	else
+		Tooltip:SetBagItem(slotData.bag, slotData.slot)
+	end
+	
+	Tooltip:Hide()
+end
+
+function setFilter:GetOptions()
+	return {
+		moveMiscellaneous = {
+			name = L["Miscellaneous Items"],
+			desc = L["Items that dont fall into any other categorys"],
+			type = "toggle",
+			order = 10
+		},
+		moveCurrency = {
+			name = L["Battle Pet Currency Items"],
+			desc = L["Items used to buy Battle Pet related Items"],
+			type = "toggle",
+			order = 20
+		},
+		moveContaining = {
+			name = L["Drop Battle Pet containers"],
+			desc = L["Items that drop that can contain Battle Pets"],
+			type = "toggle",
+			order = 30
+		},
+		moveSupplies = {
+			name = L["Bags and Supplies"],
+			desc = L["Bags that are obtained that contain Battle Pet Items"],
+			type = "toggle",
+			order = 40
+		},
+		moveRare = {
+			name = L["Rarity Stones"],
+			desc = L["Items that increase rarity of Battle Pets"],
+			type = "toggle",
+			order = 50
+		},
+		moveTraining = {
+			name = L["Training Stones"],
+			desc = L["Items that add levels to Battle Pets"],
+			type = "toggle",
+			order = 60
+		},
+		moveToys = {
+			name = L["Pet Toys"],
+			desc = L["Toys usable with all Battle Pets"],
+			type = "toggle",
+			order = 70
+		},
+		moveCostume = {
+			name = L["Pug Costumes"],
+			desc = L["All items for your Perky Pugs"],
+			type = "toggle",
+			order = 80
+		}
+	},
+	AdiBags:GetOptionHandler(self, false, function ()
+		return self:Update()
+	end)
+end

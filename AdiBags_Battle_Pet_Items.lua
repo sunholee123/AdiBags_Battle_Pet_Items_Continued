@@ -124,7 +124,7 @@ local costumeItems = {
 	116172, --Perky Blaster
 	116810, --"Mad Alchemist" Costume
 	116811, --"Lil' Starlet" Costume
-	ll6812, --"Yipp-Saron" Costume
+	116812, --"Yipp-Saron" Costume
 	128650, --"Merry Munchkin" Costume
 }
 

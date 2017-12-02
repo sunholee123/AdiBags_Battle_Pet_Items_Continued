@@ -30,6 +30,7 @@ Items that are obtained that can contain Battle Pets
 * 137599 Pulsating Sac
 * 137608 Growling Sack
 * 153190 Fel Spotted Egg
+* 153191 Cracked Fel-Spotted Egg
 
 ## Supplies Bags
 Bags that are obtained that contain Battle Pet Items

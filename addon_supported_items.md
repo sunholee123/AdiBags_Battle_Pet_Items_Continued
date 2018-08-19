@@ -1,5 +1,6 @@
 # How to Read this
 All items are broken down into categories, with itemID followed by the Item name.
+Latest version: v1.0.02
 
 ## Miscellaneous Items
 Items that dont fall into any other category
@@ -13,13 +14,15 @@ Items that dont fall into any other category
 * 98112 Lesser Pet Treat
 * 98114 Pet Treat
 * 139003 Pocket Pet Portal
+* 139036 Ominous Pet Treat
 
 ## Currency Items
 Items used to buy Battle Pet related Items
 
 * 101529 Celestial Coin
-* 116415 Pet Charm
+* 116415 Shiny Pet Charm
 * 151191 Old Bottle Cap
+* 163036 Polished Pet Charm
 
 ## Battle Pet Containing Items
 Items that are obtained that can contain Battle Pets
@@ -100,6 +103,10 @@ Toys usable with all Battle Pets
 * 129958 Leather Pet Leash
 * 129961 Flaming Hoop
 * 140231 Narcissa's Mirror
+* 163205 Ghostly Pet Biscuit
+* 163697 Laser Pointer
+* 163704 Tiny Mechanical Mouse
+* 163705 Imaginary Gun
 
 ## Costume Items
 All items for your Perky Pug

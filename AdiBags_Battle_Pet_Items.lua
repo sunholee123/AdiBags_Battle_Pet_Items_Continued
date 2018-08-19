@@ -1,6 +1,6 @@
 --[[AdiBags - Battle Pet Items
 by LownIgnitus
-version: v1.0.01
+version: v1.0.02
 Add various Battle Pet items to AdiBags filter groups]]
 
 local addonName, addon = ...
@@ -27,14 +27,17 @@ local petItems = {
 	89906, --Magical Mini-Treat
 	98112, --Lesser Pet Treat
 	98114, --Pet Treat
+	163697, --Laser Pointer
 	139003, --Pocket Pet Portal
+	139036, --Ominous Pet Treat
 }
 
 --Items used to buy Battle Pet related Items
 local currencyItems = { 
 	101529, --Celestial Coin
-	116415, --Pet Charm
+	116415, --Shiney Pet Charm
 	151191, --Old Bottle Cap
+	163036, --Polished Pet Charm
 }
 
 --Items that are obtained that can contain Battle Pets
@@ -115,6 +118,9 @@ local battlePetToys = {
 	129958, --Leather Pet Leash
 	129961, --Flaming Hoop
 	140231, --Narcissa's Mirror
+	163205, --Ghostly Pet Biscuit
+	163704, --Tiny Mechanical Mouse
+	163705, --Imaginary Gun
 }
 
 --All items for your Perky Pug

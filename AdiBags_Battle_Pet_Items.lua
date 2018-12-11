@@ -1,6 +1,6 @@
 --[[AdiBags - Battle Pet Items
 by LownIgnitus
-version: v1.0.02
+version: v1.0.03
 Add various Battle Pet items to AdiBags filter groups]]
 
 local addonName, addon = ...

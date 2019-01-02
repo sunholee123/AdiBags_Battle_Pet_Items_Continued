@@ -12,7 +12,9 @@ addon.L = L
 
 local locale = GetLocale()
 
-if locale == "enUS" then
+if locale == "deDE" then
+--Translation missing
+elseif locale == "enUS" then
 L["Battle Pet Items"] = true
 L["Items that are connected to Battle Pets and not actual pets."] = true
 L["Miscellaneous Items"] = true
@@ -31,6 +33,24 @@ L["Pet Toys"] = true
 L["Toys usable with all Battle Pets"] = true
 L["Pug Costumes"] = true
 L["All items for your Perky Pugs"] = true
+elseif local == "esES" then
+--Translation missing
+elseif locale == "esMX" then
+--Translation missing
+elseif locale == "frFR" then
+--Translation missing
+elseif locale == "itIT" then
+--Translation missing
+elseif locale == "koKR" then
+--Translation missing
+elseif locale == "ptBR" then
+--Translation missing
+elseif locale == "ruRU" then
+--Translation missing
+elseif locale == "zhCN" then
+--Translation missing
+elseif locale == "zhTW" then
+--Translation missing
 end
 
 -- Replace remaining true values by their key

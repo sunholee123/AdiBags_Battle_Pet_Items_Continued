@@ -1,7 +1,9 @@
---[[AdiBags - Battle Pet Items
+--[[
+AdiBags - Battle Pet Items
 by LownIgnitus
 version: v1.0.03
-Add various Battle Pet items to AdiBags filter groups]]
+Add various Battle Pet items to AdiBags filter groups
+]]
 
 local addonName, addon = ...
 local AdiBags = LibStub("AceAddon-3.0"):GetAddon("AdiBags")
@@ -242,7 +244,7 @@ function setFilter:GetOptions()
 	return {
 		moveMiscellaneous = {
 			name = L["Miscellaneous Items"],
-			desc = L["Items that dont fall into any other categorys"],
+			desc = L["Items that dont fall into any other category"],
 			type = "toggle",
 			order = 10
 		},

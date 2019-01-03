@@ -33,7 +33,7 @@ L["Pet Toys"] = true
 L["Toys usable with all Battle Pets"] = true
 L["Pug Costumes"] = true
 L["All items for your Perky Pugs"] = true
-elseif local == "esES" then
+elseif locale == "esES" then
 --Translation missing
 elseif locale == "esMX" then
 --Translation missing

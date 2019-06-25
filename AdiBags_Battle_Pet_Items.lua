@@ -1,7 +1,7 @@
 --[[
 AdiBags - Battle Pet Items
 by LownIgnitus
-version: v1.0.03
+version: v1.0.04
 Add various Battle Pet items to AdiBags filter groups
 ]]
 

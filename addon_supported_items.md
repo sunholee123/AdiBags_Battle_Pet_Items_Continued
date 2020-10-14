@@ -1,6 +1,6 @@
 # How to Read this
 All items are broken down into categories, with itemID followed by the Item name.
-Latest version: v1.0.03
+Latest version: v1.0.7
 
 ## Miscellaneous Items
 Items that dont fall into any other category

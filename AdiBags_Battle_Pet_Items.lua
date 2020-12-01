@@ -1,7 +1,7 @@
 --[[
 AdiBags - Battle Pet Items
 by LownIgnitus
-version: v1.0.8
+version: v1.0.9
 Add various Battle Pet items to AdiBags filter groups
 ]]
 
@@ -32,6 +32,9 @@ local petItems = {
 	163697, --Laser Pointer
 	139003, --Pocket Pet Portal
 	139036, --Ominous Pet Treat
+	183111, --Animated Ulna
+	183112, --Animated Radius
+	183113, --Flexing Phalanges
 }
 
 --Items used to buy Battle Pet related Items
@@ -51,6 +54,7 @@ local battlePetContainingItems = {
 	137608, --Growling Sack
 	153190, --Fel Spotted Egg
 	153191, --Cracked Fel-Spotted Egg
+	182607, --Hairy Egg
 }
 
 --Bags that are obtained that contain Battle Pet Items

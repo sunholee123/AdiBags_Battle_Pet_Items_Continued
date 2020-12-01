@@ -15,6 +15,9 @@ Items that dont fall into any other category
 * 98114 Pet Treat
 * 139003 Pocket Pet Portal
 * 139036 Ominous Pet Treat
+* 183111 Animated Ulna
+* 183112 Animated Radius
+* 183113 Flexing Phalanges
 
 ## Currency Items
 Items used to buy Battle Pet related Items
@@ -34,6 +37,7 @@ Items that are obtained that can contain Battle Pets
 * 137608 Growling Sack
 * 153190 Fel Spotted Egg
 * 153191 Cracked Fel-Spotted Egg
+* 182607 Hairy Egg
 
 ## Supplies Bags
 Bags that are obtained that contain Battle Pet Items

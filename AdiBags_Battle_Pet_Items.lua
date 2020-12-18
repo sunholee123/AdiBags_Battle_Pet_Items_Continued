@@ -1,7 +1,7 @@
 --[[
 AdiBags - Battle Pet Items
 by LownIgnitus
-version: v1.0.9
+version: v1.0.10
 Add various Battle Pet items to AdiBags filter groups
 ]]
 
@@ -32,6 +32,17 @@ local petItems = {
 	163697, --Laser Pointer
 	139003, --Pocket Pet Portal
 	139036, --Ominous Pet Treat
+	163789, -- Bundle of Wiker Sticks
+	163790, -- Spooky Incantation
+	163791, -- Minature Stag Skull
+	163796, -- Wolf Pup Spine
+	165840, -- Interdimentional Pet Portal
+	166732, -- Bludgeoning-Resistant Chest Reinforcer
+	166733, -- Steel-Plated Primate Exoskeleton
+	166734, -- Banana-Shaped Power Cell
+	166735, -- Mecha-Spinneret
+	166737, -- Handful of Glass Spider Eyes
+	166738, -- Steel-Plated Arachnid Exoskeleton
 	183111, --Animated Ulna
 	183112, --Animated Radius
 	183113, --Flexing Phalanges
@@ -43,6 +54,9 @@ local currencyItems = {
 	116415, --Shiney Pet Charm
 	151191, --Old Bottle Cap
 	163036, --Polished Pet Charm
+	165835, -- Pristine Gizmo
+	169665, -- Cleansed Remains
+	174360, -- Shadowy Gem
 }
 
 --Items that are obtained that can contain Battle Pets

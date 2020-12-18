@@ -15,9 +15,20 @@ Items that dont fall into any other category
 * 98114 Pet Treat
 * 139003 Pocket Pet Portal
 * 139036 Ominous Pet Treat
-* 183111 Animated Ulna
-* 183112 Animated Radius
-* 183113 Flexing Phalanges
+* 163789 - Bundle of Wiker Sticks
+* 163790 - Spooky Incantation
+* 163791 - Minature Stag Skull
+* 163796 - Wolf Pup Spine
+* 165840 - Interdimentional Pet Portal
+* 166732 - Bludgeoning-Resistant Chest Reinforcer
+* 166733 - Steel-Plated Primate Exoskeleton
+* 166734 - Banana-Shaped Power Cell
+* 166735 - Mecha-Spinneret
+* 166737 - Handful of Glass Spider Eyes
+* 166738 - Steel-Plated Arachnid Exoskeleton
+* 183111 - Animated Ulna
+* 183112 - Animated Radius
+* 183113 - Flexing Phalanges
 
 ## Currency Items
 Items used to buy Battle Pet related Items
@@ -26,6 +37,9 @@ Items used to buy Battle Pet related Items
 * 116415 Shiny Pet Charm
 * 151191 Old Bottle Cap
 * 163036 Polished Pet Charm
+* 165835 - Pristine Gizmo
+* 169665 - Cleansed Remains
+* 174360 - Shadowy Gem
 
 ## Battle Pet Containing Items
 Items that are obtained that can contain Battle Pets
@@ -37,7 +51,9 @@ Items that are obtained that can contain Battle Pets
 * 137608 Growling Sack
 * 153190 Fel Spotted Egg
 * 153191 Cracked Fel-Spotted Egg
-* 182607 Hairy Egg
+* 160324 - Grumbling Sac
+* 160832 - Viable Cobra Egg
+* 182607 - Hairy Egg
 
 ## Supplies Bags
 Bags that are obtained that contain Battle Pet Items

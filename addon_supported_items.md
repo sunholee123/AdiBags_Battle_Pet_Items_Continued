@@ -127,6 +127,7 @@ Toys usable with all Battle Pets
 * 163697 Laser Pointer
 * 163704 Tiny Mechanical Mouse
 * 163705 Imaginary Gun
+* 174925 Void Tendril Pet Leash
 
 ## Costume Items
 All items for your Perky Pug

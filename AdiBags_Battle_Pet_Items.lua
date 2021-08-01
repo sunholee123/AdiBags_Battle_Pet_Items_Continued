@@ -141,6 +141,7 @@ local battlePetToys = {
 	163205, --Ghostly Pet Biscuit
 	163704, --Tiny Mechanical Mouse
 	163705, --Imaginary Gun
+	174925, --Void Tendril Pet Leash
 }
 
 --All items for your Perky Pug

@@ -1,0 +1,11 @@
+## Interface: 100100
+## Title: AdiBags - Battle Pet Items Continued
+## Version: 1.0
+## Author: sunholee123 (originally created by lownignitus)
+## Notes: Adds various Battle Pet items to AdiBags item filters.
+## X-Website: https://github.com/sunholee123/AdiBags_Battle_Pet_Items_Continued
+## X-Category: Bags & Inventory
+## Dependencies: AdiBags
+
+Localization.lua
+AdiBags_Battle_Pet_Items_Continued.lua

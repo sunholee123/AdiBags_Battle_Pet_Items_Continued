@@ -1,10 +1,3 @@
---[[
-AdiBags - Battle Pet Items
-by LownIgnitus
-version: v1.0.11
-Add various Battle Pet items to AdiBags filter groups
-]]
-
 local addonName, addon = ...
 local AdiBags = LibStub("AceAddon-3.0"):GetAddon("AdiBags")
 
